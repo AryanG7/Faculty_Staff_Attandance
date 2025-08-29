@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #1A2226;
+        animation: backgroundAnimation 10s ease infinite;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        animation: cardAnimation 1s ease-in-out;
+        transform-origin: center;
+      }
+
+      @keyframes cardAnimation {
+        0% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      h1 {
+        margin-top: 0;
+        color: #333;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        display: inline-block;
+        margin: 10px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      a:hover {
+        color: #fff;
+        background-color: #007bff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+      .heading{
+        margin-top: 0;
+        color:#0DB8DE;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+      }
+      .logout {
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .logout:hover {
+        background-color: #f13b3b;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div class="header">
+      <h1 class="heading">ADMIN PANEL</h1>
+    </div>
+  
+    <div class="card">
+      <h1>Staff</h1>
+      <a href="/admin/staff/view">View</a>
+      <a href="/admin/staff/attendance">Attendance</a>
+    </div>
+    <div class="card">
+      <h1>Faculty</h1>
+      <a href="/admin/faculty/view">View</a>
+      <a href="/admin/faculty/attendance">Attendance</a>
+    </div>
+    <div class="card">
+      <h1>Leave</h1>
+      <a href="/admin/staff/leave">Staff leave</a>
+      <a href="/admin/faculty/leave">Faculty leave</a>
+    </div>
+    <a href="/admin/login" class="logout">Logout</a>
+  </body>
+</html>

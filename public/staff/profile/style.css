@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: "Nunito sans", sans-serif;
+}
+
+body {
+  background-color: #222D32;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  color: #ECF0F5;
+}
+
+.card {
+  background-color: #1A2226;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: 5px solid rgb(0, 238, 255);
+}
+
+.card__image {
+  padding: 2rem;
+  padding-bottom: 0;
+  width: 30rem;
+  height: 23rem;
+}
+
+.card__image img {
+  position: absolute;
+  border-radius: 1rem;
+  width: inherit;
+  height: 34rem;
+  transform: translateY(-4.5rem);
+  object-fit: cover;
+  box-shadow: -7px 6px 13px -1px rgba(40, 40, 40, 0.55);
+  transition: all 0.5s ease;
+}
+
+.card__image img:hover {
+  transform: translateY(-4.5rem) scale(1.05);
+}
+
+.card p {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card__name p {
+  color: #ECF0F5;
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0.2rem 0;
+}
+
+.card__button {
+  border-radius: 1rem;
+  background: #0DB8DE;
+  color: #ECF0F5;
+  font-weight: bold;
+  margin: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: -7px 6px 13px -1px rgba(40, 40, 40, 0.55);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.header {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+}
+.logout {
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout:hover {
+  background-color: #f13b3b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
